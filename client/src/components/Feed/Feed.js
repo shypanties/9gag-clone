@@ -11,7 +11,7 @@ class Feed extends Component {
     super(props);
 
     this.state = {
-      currentTag: "Hot",
+      currentTag: "Fresh",
       loading: false,
       error: null,
       posts: [],

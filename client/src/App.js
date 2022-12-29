@@ -23,7 +23,8 @@ class App extends Component {
         <Switch>
           <Route path="/gag/:postId" component={FullPostPage} />
           <Route path="/test-nav-bar" component={Toolbar} />
-          <Route path="/test-feed" component={Feed} />
+          {/* <Route path="/test-feed" component={Feed} /> */}
+          <Route path="/feed" component={Feed} />
           <Route path="/verify-user" component={VerifyAccount} />
           <Route
             path="/confirm-reset-password"
