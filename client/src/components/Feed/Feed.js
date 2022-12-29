@@ -37,19 +37,19 @@ class Feed extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   this.setState({ loading: true });
-  //   postApi
-  //     .getPosts()
-  //     .then(data => {
-  //       this.setState({ posts: data, loading: false, error: null });
-  //       console.log(data);
-  //     })
-  //     .catch(err => {
-  //       this.setState({ loading: false, error: null });
-  //       console.log(err);
-  //     });
-  // }
+  componentDidMount() {
+    this.setState({ loading: true });
+    postApi
+      .getPosts()
+      .then(data => {
+        console.log(data);
+        this.setState({ posts: data.post, loading: false, error: null });
+      })
+      .catch(err => {
+        this.setState({ loading: false, error: null });
+        console.log(err);
+      });
+  }
 
   render() {
     const { className, hasProfile } = this.props;
