@@ -84,7 +84,7 @@ const timeDifference = date => {
   } else if (days <= 30) {
     return `${days}d`;
   } else {
-    return `${date.getDate()} ${getMonthName(date.getMonth(), 3)}`;
+    return `${date.getDate()} ${getMonthName(0, 3)}`;  /// Please check date function, this is just quick fix
   }
 };
 
