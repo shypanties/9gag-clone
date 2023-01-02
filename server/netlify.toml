@@ -1,0 +1,7 @@
+[build]
+    modules="modules"
+
+[[redirects]] 
+  to=”/.netlify/modules/api:splat” 
+  from=”/*” 
+  status=200
