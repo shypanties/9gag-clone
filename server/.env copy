@@ -1,0 +1,14 @@
+NODE_ENV = development
+PORT = 8000
+HOST = localhost
+APP_URI = https://memepage3000.netlify.app/
+API_URI = https://meme-server.onrender.com/api
+STATIC_DIR = https://meme-server.onrender.com/uploads/images
+IMAGE_DIR = https://meme-server.onrender.com/images
+ASSET_DIR = https://meme-server.onrender.com/assets
+COMMENT_ASSETS_DIR = https://meme-server.onrender.com/comment-images
+DEFAULT_PASSWORD = "a4cc4b2fd63f9bff"
+SSL_CRT_NAME = server.crt
+SSL_KEY_NAME = server.key
+JWT_SECRET = "TopSecretWebTokenKey"
+MONGODB_URI = "mongodb+srv://Shypanties:Shypanties@shypanties.s7buk4q.mongodb.net/Shypanties"
