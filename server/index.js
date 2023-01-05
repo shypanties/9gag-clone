@@ -3,6 +3,7 @@ require("dotenv").config({ path: "./.env" });
 const path = require("path");
 const fs = require("fs");
 const https = require("https");
+const http = require("http")
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -82,7 +83,7 @@ mongoose
     const port = process.env.PORT;
     console.warn("Listening at port:", port);
     // app.listen(process.env.PORT);
-    https
+    http
       .createServer(
         // {
         //   key: fs.readFileSync(
